@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nền tảng công nghệ trẻ trung, hiện đại dành cho sinh viên và người mới bắt đầu. Khám phá, sáng tạo và làm chủ tương lai số.">
+  <title>Kreativ - Nền Tảng Công Nghệ Thế Hệ Trẻ</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Gradients -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="navbar-wrapper" id="navbar">
+    <div class="container navbar-container">
+      <a href="#home" class="logo" aria-label="Trang chủ Kreativ">
+        <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+        <span class="logo-text">Kreativ<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+          <li><a href="#features" class="nav-link">Tính năng</a></li>
+          <li><a href="#interactive" class="nav-link">Góc trải nghiệm</a></li>
+          <li><a href="#about" class="nav-link">Về chúng tôi</a></li>
+        </ul>
+        <div class="mobile-cta-wrapper">
+          <a href="#cta" class="btn btn-primary btn-sm mobile-nav-btn">Bắt đầu ngay</a>
+        </div>
+      </nav>
+
+      <!-- Header CTA, Theme Mode Toggle & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="theme-mode-toggle" id="themeModeToggle" aria-label="Chuyển chế độ sáng/tối" title="Chuyển đổi giao diện Sáng / Tối">
+          <i class="fa-solid fa-moon" id="themeModeIcon"></i>
+        </button>
+        <a href="#cta" class="btn btn-primary nav-cta desktop-only">Bắt đầu ngay</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Mở menu chuyển hướng" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (Full-Screen Expansive Layout) -->
+    <section class="hero-section" id="home">
+      <!-- Full-bleed background tech grid -->
+      <div class="hero-tech-grid" aria-hidden="true"></div>
+
+      <div class="container-fluid hero-container hero-grid">
+        <!-- Hero Content (Left Column) -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Dành riêng cho sinh viên &amp; thế hệ số</span>
+          </div>
+          <h1 class="hero-title">
+            Build. Create. <span class="gradient-text">Explore.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Học công nghệ không hề phức tạp. Khám phá những công cụ hiện đại, trực quan và dễ tiếp cận nhất để hiện thực hóa mọi ý tưởng của bạn ngay hôm nay.
+          </p>
+          <div class="hero-buttons">
+            <a href="#cta" class="btn btn-primary btn-lg pulse-hover">
+              <span>Bắt đầu ngay</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#features" class="btn btn-outline btn-lg">
+              <i class="fa-regular fa-compass"></i>
+              <span>Khám phá</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats / Highlights in Hero -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-circle-check"></i></div>
+              <span>100% Miễn phí</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <span>Không cần cài đặt</span>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fa-solid fa-users"></i></div>
+              <span>Cộng đồng thân thiện</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Graphic / Full-Width Dual-Pane Studio (Right Column) -->
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <!-- Online Status Pill Floating Above Card -->
+            <div class="hero-top-pill">
+              <span class="live-pulse"></span>
+              <span><strong>1,520+</strong> sinh viên đang tương tác trực tiếp</span>
+            </div>
+
+            <!-- Main Hero Tech Card (Full-Width Dual-Pane Studio Window) -->
+            <div class="code-preview-card" id="heroMainCard">
+              <!-- Window Top Bar with Navigation & View Toggles -->
+              <div class="card-header-bar">
+                <div class="window-left-actions">
+                  <div class="window-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                  </div>
+                  <div class="window-breadcrumb">
+                    <i class="fa-regular fa-folder-open text-amber"></i>
+                    <span>kreativ-app</span>
+                    <span class="sep">/</span>
+                    <span class="active-file">src/app.js</span>
+                  </div>
+                </div>
+
+                <!-- Studio Tabs / View Selector -->
+                <div class="window-tabs" id="heroTabs">
+                  <button class="win-tab active" data-view="split" title="Xem song song cả code và kết quả">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Song song</span>
+                  </button>
+                  <button class="win-tab" data-view="code" title="Chỉ xem trình soạn thảo mã">
+                    <i class="fa-brands fa-js text-yellow"></i>
+                    <span>Mã nguồn</span>
+                  </button>
+                  <button class="win-tab" data-view="preview" title="Chỉ xem kết quả giao diện">
+                    <i class="fa-solid fa-eye text-emerald"></i>
+                    <span>Giao diện</span>
+                  </button>
+                </div>
+
+                <!-- Quick Run Action -->
+                <div class="window-right-actions">
+                  <button class="btn-run-code" id="runHeroCodeBtn" title="Chạy thử mã nguồn">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Khởi chạy ▶</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dual Pane Studio Body -->
+              <div class="studio-dual-body" id="studioDualBody">
+                <!-- Left Pane: Code Editor -->
+                <div class="studio-pane-editor" id="studioPaneEditor">
+                  <div class="editor-subbar">
+                    <span class="editor-file-tab"><i class="fa-brands fa-js text-yellow"></i> app.js <span class="dot-live"></span></span>
+                    <span class="editor-meta">ES2026 • 60 FPS</span>
+                  </div>
+                  <div class="card-body-editor">
+                    <div class="editor-lines">
+                      <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span><span>06</span><span>07</span><span>08</span><span>09</span><span>10</span>
+                    </div>
+                    <div class="card-body-code">
+                      <div class="code-line"><span class="code-keyword">import</span> { <span class="code-var">Student</span>, <span class="code-var">Kreativ</span> } <span class="code-keyword">from</span> <span class="code-string">'@gen-z/tech'</span>;</div>
+                      <div class="code-line"></div>
+                      <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">futureDev</span> = <span class="code-keyword">new</span> <span class="code-func">Student</span>({</div>
+                      <div class="code-line indent-1"><span class="code-prop">generation</span>: <span class="code-string">"Thế Hệ Trẻ Số"</span>,</div>
+                      <div class="code-line indent-1"><span class="code-prop">mindset</span>: <span class="code-string">"Chủ động &amp; Sáng tạo"</span>,</div>
+                      <div class="code-line indent-1"><span class="code-prop">superpower</span>: [<span class="code-string">"Logic"</span>, <span class="code-string">"Đam mê"</span>],</div>
+                      <div class="code-line indent-1"><span class="code-prop">readyToFly</span>: <span class="code-keyword">true</span></div>
+                      <div class="code-line">});</div>
+                      <div class="code-line code-comment">// Nhấp nút [Khởi chạy ▶] hoặc click widget bên phải 🚀</div>
+                      <div class="code-line"><span class="code-var">futureDev</span>.<span class="code-func">launchProject</span>();</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Pane: Live Interactive Rendered Canvas -->
+                <div class="studio-pane-preview" id="studioPanePreview">
+                  <div class="preview-subbar">
+                    <span class="browser-fake-url"><i class="fa-solid fa-lock text-emerald"></i> http://localhost:3000/app-preview</span>
+                    <span class="preview-fps">60 FPS</span>
+                  </div>
+                  <div class="studio-canvas">
+                    <div class="canvas-widget-card" id="heroInteractiveWidget">
+                      <div class="widget-user-header">
+                        <div class="user-avatar-glow">🚀</div>
+                        <div class="user-meta">
+                          <h5>Kreativ Studio Live</h5>
+                          <span>Trực quan • Phản hồi tức thì</span>
+                        </div>
+                        <span class="widget-live-badge"><span class="pulse-dot"></span> LIVE</span>
+                      </div>
+                      <div class="widget-interactive-body">
+                        <p class="widget-lead-text">"Học công nghệ cùng thế hệ trẻ: nhanh, trực quan và không áp lực!"</p>
+                        <div class="widget-meter-row">
+                          <div class="meter-info">
+                            <span>Chỉ số tự tin thực chiến</span>
+                            <strong id="heroConfidenceScore">98%</strong>
+                          </div>
+                          <div class="meter-track">
+                            <div class="meter-bar" id="heroMeterBar" style="width: 98%;"></div>
+                          </div>
+                        </div>
+                        <div class="widget-actions-row">
+                          <button class="btn btn-sm btn-primary" id="heroBoostBtn" type="button">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>Bấm thử nút này!</span>
+                          </button>
+                          <span class="widget-hint" id="heroClickHint">Đã trải nghiệm: 0 lần</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Embedded Interactive Mini Terminal / Console Bar -->
+              <div class="card-terminal-drawer" id="heroTerminalDrawer">
+                <div class="terminal-header">
+                  <span class="term-status-dot"></span>
+                  <span class="term-title"><i class="fa-solid fa-terminal"></i> Terminal Console</span>
+                  <span class="term-time" id="terminalTimestamp">10:30:15</span>
+                </div>
+                <div class="terminal-body" id="heroTerminalLogs">
+                  <div class="term-log-row"><span class="t-green">✔</span> <span class="t-msg">Kreativ Full-Screen Workspace active [100% Viewport Covered].</span></div>
+                  <div class="term-log-row"><span class="t-cyan">ℹ</span> <span class="t-msg">Hot Reloading connected. Dual-pane preview synced.</span></div>
+                  <div class="term-log-row highlight-log"><span class="t-yellow">⚡</span> <span class="t-msg">Live preview online. Click "Bấm thử nút này!" inside the widget!</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1 (Top Right) -->
+            <div class="floating-badge badge-top-right float-anim-1">
+              <div class="badge-icon bg-indigo"><i class="fa-solid fa-bolt-lightning"></i></div>
+              <div class="badge-info">
+                <div class="badge-title">99.8% Tối ưu</div>
+                <div class="badge-desc">Tải siêu tốc</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2 (Bottom Left) -->
+            <div class="floating-badge badge-bottom-left float-anim-2">
+              <div class="badge-icon bg-cyan"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div class="badge-info">
+                <div class="badge-title">15,000+ Bạn trẻ</div>
+                <div class="badge-desc">Đang học &amp; sáng tạo</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 3 (Bottom Right) -->
+            <div class="floating-badge badge-mid-right float-anim-3">
+              <div class="badge-icon bg-purple"><i class="fa-solid fa-shield-heart"></i></div>
+              <div class="badge-info">
+                <div class="badge-title">100% Miễn phí</div>
+                <div class="badge-desc">Mở mã nguồn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Điểm vượt trội</span>
+          <h2 class="section-title">Tại sao sinh viên và người mới <br><span class="gradient-text">yêu thích nền tảng này?</span></h2>
+          <p class="section-subtitle">
+            Thiết kế tối giản giúp bạn tập trung hoàn toàn vào việc sáng tạo, bỏ qua những cấu hình rườm rà.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-blue">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="feature-title">Dễ dàng tiếp cận</h3>
+            <p class="feature-desc">
+              Không đòi hỏi kiến thức chuyên sâu từ trước. Mọi khái niệm được giải thích trực quan, dễ hiểu như đang trò chuyện với người bạn thân.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-purple">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3 class="feature-title">Giao diện hiện đại</h3>
+            <p class="feature-desc">
+              Phong cách thiết kế chuẩn mực thế giới số: bố cục thoáng đãng, màu sắc tươi sáng, từng nút bấm đều đem lại sự hứng khởi.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-cyan">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3 class="feature-title">Hiệu năng siêu tốc</h3>
+            <p class="feature-desc">
+              Không cần tải framework nặng nề hay chờ đợi lâu. Tải trang trong tích tắc, mượt mà trên mọi đường truyền internet.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-emerald">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="feature-title">Tương thích mọi thiết bị</h3>
+            <p class="feature-desc">
+              Dù bạn dùng điện thoại, máy tính bảng hay laptop trong quán cà phê, mọi thành phần đều hiển thị hoàn hảo và dễ thao tác.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-amber">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3 class="feature-title">Học đi đôi với thực hành</h3>
+            <p class="feature-desc">
+              Tương tác trực tiếp và thấy ngay kết quả. Thử nghiệm ý tưởng mới mà không sợ hỏng hóc hay lỗi hệ thống.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon icon-rose">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <h3 class="feature-title">Hoàn toàn miễn phí</h3>
+            <p class="feature-desc">
+              Xây dựng vì cộng đồng học sinh, sinh viên. Bạn có thể tự do mở mã nguồn, khám phá và tùy biến theo cá tính riêng của mình.
+            </p>
+            <div class="feature-corner-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LAB SECTION -->
+    <section class="interactive-section" id="interactive">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Góc trải nghiệm (Interactive Lab)</span>
+          <h2 class="section-title">Thử nghiệm trực tiếp <br><span class="gradient-text">không cần tài khoản</span></h2>
+          <p class="section-subtitle">
+            Trải nghiệm tương tác mượt mà được tạo nên bởi JavaScript thuần và hiệu ứng Anime.js. Hãy thử bấm các nút bên dưới!
+          </p>
+        </div>
+
+        <div class="interactive-grid">
+          <!-- Interactive Widget 1: Quote Generator -->
+          <div class="interactive-card quote-widget">
+            <div class="card-badge"><i class="fa-solid fa-quote-left"></i> Cảm hứng học tập</div>
+            <div class="quote-box" id="quoteContainer">
+              <p class="quote-text" id="quoteText">"Cách tốt nhất để bắt đầu là ngừng nói và bắt đầu làm."</p>
+              <span class="quote-author" id="quoteAuthor">— Walt Disney</span>
+            </div>
+            <button class="btn btn-secondary btn-full interactive-btn" id="newQuoteBtn">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Đổi câu truyền cảm hứng</span>
+            </button>
+          </div>
+
+          <!-- Interactive Widget 2: Study Streak Counter -->
+          <div class="interactive-card counter-widget">
+            <div class="card-badge"><i class="fa-solid fa-fire text-amber"></i> Đếm mục tiêu hôm nay</div>
+            <div class="counter-display">
+              <div class="counter-number" id="counterVal">0</div>
+              <div class="counter-label">Ý tưởng / Thử thách đã hoàn thành</div>
+            </div>
+            <div class="counter-actions">
+              <button class="btn btn-secondary counter-btn" id="decCounterBtn" aria-label="Giảm 1">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <button class="btn btn-primary counter-btn grow-btn" id="incCounterBtn">
+                <i class="fa-solid fa-plus"></i>
+                <span>Tăng mục tiêu (+1)</span>
+              </button>
+              <button class="btn btn-ghost counter-btn" id="resetCounterBtn" aria-label="Đặt lại 0" title="Đặt lại">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Interactive Widget 3: Theme Accent Changer -->
+          <div class="interactive-card mood-widget">
+            <div class="card-badge"><i class="fa-solid fa-droplet"></i> Bộ lọc cảm hứng màu sắc</div>
+            <p class="widget-desc">Chọn phong cách màu bạn thích để đổi sắc thái chủ đạo của trang ngay lập tức:</p>
+            <div class="color-palette-buttons">
+              <button class="color-btn active" data-theme="indigo" aria-label="Màu Chàm Công Nghệ">
+                <span class="color-circle bg-indigo-preview"></span>
+                <span>Indigo Vibe</span>
+              </button>
+              <button class="color-btn" data-theme="cyan" aria-label="Màu Xanh Biển Năng Động">
+                <span class="color-circle bg-cyan-preview"></span>
+                <span>Ocean Tech</span>
+              </button>
+              <button class="color-btn" data-theme="purple" aria-label="Màu Tím Sáng Tạo">
+                <span class="color-circle bg-purple-preview"></span>
+                <span>Cyber Violet</span>
+              </button>
+              <button class="color-btn" data-theme="emerald" aria-label="Màu Xanh Lá Tươi Mới">
+                <span class="color-circle bg-emerald-preview"></span>
+                <span>Fresh Mint</span>
+              </button>
+            </div>
+            <div class="theme-status" id="themeStatusText">Đang dùng: <strong>Indigo Vibe (Mặc định)</strong></div>
+          </div>
+
+          <!-- Interactive Widget 4: Quick Interactive Mini-Tasks -->
+          <div class="interactive-card task-widget">
+            <div class="card-badge"><i class="fa-solid fa-list-check"></i> Việc cần làm trong ngày</div>
+            <div class="mini-task-list" id="miniTaskList">
+              <label class="task-item">
+                <input type="checkbox" checked class="task-checkbox">
+                <span class="task-label">Mở máy tính &amp; uống nước</span>
+              </label>
+              <label class="task-item">
+                <input type="checkbox" checked class="task-checkbox">
+                <span class="task-label">Khám phá giao diện Kreativ</span>
+              </label>
+              <label class="task-item">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-label">Tự viết 1 dòng code đầu tiên</span>
+              </label>
+              <label class="task-item">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-label">Chia sẻ với bạn cùng phòng</span>
+              </label>
+            </div>
+            <div class="task-progress-bar">
+              <div class="progress-fill" id="taskProgressBar" style="width: 50%;"></div>
+            </div>
+            <div class="task-footer">
+              <span id="taskStatusText">Đã hoàn thành 2/4 mục tiêu</span>
+              <button class="btn-text-only" id="celebrateTaskBtn">
+                <i class="fa-solid fa-sparkles"></i> Tung hoa chúc mừng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-card-banner">
+              <div class="banner-glass">
+                <div class="banner-circle-avatar">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h4 class="banner-title">Sứ Mệnh Vì Thế Hệ Trẻ</h4>
+                <p class="banner-text">
+                  "Chúng tôi tin rằng bất kỳ ai cũng có thể làm chủ công nghệ nếu được tiếp cận một cách trực quan, vui vẻ và thân thiện."
+                </p>
+                <div class="banner-tags">
+                  <span class="banner-tag">#SinhVien</span>
+                  <span class="banner-tag">#HocLapTrinh</span>
+                  <span class="banner-tag">#TechForEveryone</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-pill">Về chúng tôi</span>
+            <h2 class="section-title">Khởi đầu hành trình số <br><span class="gradient-text">tự tin và hào hứng</span></h2>
+            <p class="about-paragraph">
+              Kreativ được tạo ra như một không gian mẫu mực để các bạn trẻ, sinh viên và người mới làm quen với công nghệ có thể tìm thấy sự đơn giản và cảm hứng.
+            </p>
+            <p class="about-paragraph">
+              Không cần phải hiểu hết các thuật ngữ phức tạp ngay từ đầu, bạn chỉ cần một tinh thần cởi mở, lòng tò mò và sự kiên trì nhỏ mỗi ngày.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="stat-item">
+                <span class="stat-num counter-anim" data-target="15">15k+</span>
+                <span class="stat-label">Bạn trẻ kết nối</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num counter-anim" data-target="100">100%</span>
+                <span class="stat-label">Miễn phí trọn đời</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">0s</span>
+                <span class="stat-label">Thời gian chờ cài đặt</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION (CTA) SECTION -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-sparkle sparkle-1"><i class="fa-solid fa-star"></i></div>
+          <div class="cta-sparkle sparkle-2"><i class="fa-solid fa-star"></i></div>
+
+          <span class="section-pill pill-light">Hành trình bắt đầu từ hôm nay</span>
+          <h2 class="cta-title">Ready to explore?</h2>
+          <p class="cta-subtitle">
+            Hàng ngàn bạn sinh viên đã bắt đầu xây dựng dự án đầu tay của mình. Còn bạn thì sao?
+          </p>
+
+          <div class="cta-actions">
+            <button class="btn btn-white btn-xl cta-main-btn" id="ctaActionBtn">
+              <span>Let's Go</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <p class="cta-note">
+            <i class="fa-solid fa-shield-check"></i> Không cần đăng ký thẻ • Mở file HTML và chạy ngay lập tức
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Footer Info -->
+      <div class="footer-brand">
+        <a href="#home" class="logo footer-logo">
+          <span class="logo-icon"><i class="fa-solid fa-bolt"></i></span>
+          <span class="logo-text">Kreativ<span class="dot">.</span></span>
+        </a>
+        <p class="footer-desc">
+          Trang web công nghệ hiện đại, sáng sủa và năng động dành riêng cho học sinh, sinh viên và người mới bắt đầu.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Điều hướng</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#features">Tính năng nổi bật</a></li>
+          <li><a href="#interactive">Góc tương tác</a></li>
+          <li><a href="#about">Về dự án</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Tài nguyên</h4>
+        <ul class="footer-links">
+          <li><a href="#">Tài liệu hướng dẫn</a></li>
+          <li><a href="#">Thư viện Anime.js</a></li>
+          <li><a href="#">Mẫu giao diện web</a></li>
+          <li><a href="#">Mẹo học lập trình</a></li>
+        </ul>
+      </div>
+
+      <!-- Community -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Cộng đồng</h4>
+        <p class="footer-col-text">Cùng thảo luận, chia sẻ kiến thức và học hỏi kinh nghiệm lập trình hoàn toàn miễn phí.</p>
+        <div class="footer-badge-item">
+          <i class="fa-solid fa-heart text-rose"></i>
+          <span>Tạo dựng bởi tình yêu công nghệ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Kreativ. Xây dựng bằng HTML5, CSS3 &amp; Anime.js. Tất cả quyền được bảo lưu.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Chính sách bảo mật</a>
+        <span>•</span>
+        <a href="#">Điều khoản sử dụng</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Anime.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
